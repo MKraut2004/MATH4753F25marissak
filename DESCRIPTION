@@ -1,17 +1,27 @@
 Package: MATH4753F25marissak
 Type: Package
-Title: Lab Code 2025
+Title: Code for MATH 4753
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
+      "Marissa", "Krautbauer",
+      email = "marissa.k.krautbauer-1@ou.edu",
+      role = c("aut", "cre", "cph", "fnd"),
+      comment = "Student in MATH-4753 (FALL 2025)"
     )
   )
-Description: Lab Code 2025
-License: What license is it under?
+Description: This package contains functions and datasets for MATH 4753 (FALL 2025).
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/MKraut2004/MATH4753F25marissak
 BugReports: https://github.com/MKraut2004/MATH4753F25marissak/issues
+RoxygenNote: 7.3.3
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: 
+    R (>= 3.5)
