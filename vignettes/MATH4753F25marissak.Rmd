@@ -1,0 +1,71 @@
+---
+title: "MATH4753F25marissak"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MATH4753F25marissak}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25marissak)
+```
+
+# Introduction
+The `MATH4753F25marissak` package provides tools for statistical analysis, bootstrapping, and visualization. It includes multiple functions and datasets designed to support coursework in MATH 4753.
+
+# Datasets
+This package includes two datasets:
+
+- `fire`: [A dataset containing fire-related data, 15 rows and 2 variables]
+
+- `ddt`: [A dataset containing measurements of DDT concentrations in the Tennessee River Valley, 144 rows and 6 columns]
+
+```{r}
+head(fire)
+summary(fire)
+```
+```{r}
+head(ddt)
+summary(ddt)
+```
+
+# Functions 
+This package includes 11 functions - four are described below:
+
+- `mycurve`: [Function plots a normal distribution and shades the area up to a given value `a`]
+
+- `Birthday`: [Function calculates the probability that at least two people in a group share a birthday]
+
+- `mycltu`: [Function simulates the Central Limit Theorem using samples from a uniform distribution]
+
+- `ntickets`: [Function calculates the maximum number of tickets to sell given seat capacity, show‑up probability, and acceptable overbooking risk]
+
+```{r}
+myncurve(mu = 100, sigma = 15, a = 120)
+```
+```{r}
+Birthday(20:24)
+```
+```{r}
+mycltu(n = 20, iter = 10000)
+```
+```{r, fig.width=7, fig.height=6}
+ntickets(N = 400, gamma = 0.02, p = 0.95)
+```
+
+# Conclusion
+This vignette demonstrates how the `MATH4753F25marissak` package can be used for probability visualization, simulation, and applied decision‑making. For more details, see the GitHub repository: https://github.com/yourusername/MATH4753F25marissak
+
+
+
+
+
+
